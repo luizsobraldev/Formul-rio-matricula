@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/index.css">
 </head>
+
 <body>
   <div id="app">
     <main>
@@ -20,6 +22,45 @@
 
         <h1>Formulário de matrícula</h1>
         <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+
+        <form>
+          <fieldset class="child-info">
+            <legend>Informações da criança</legend>
+
+            <div class="input-wrapper">
+              <label for="fullname">Nome Completo</label>
+              <input type="text" name="fullname" id="fullname" placeholder="Qual o nome da criança">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="birth">Data de nascimento</label>
+              <input type="date" name="birth" id="birth">
+            </div>
+
+            <div class="select-wrapper">
+              <label for="gender">Sexo</label>
+              <select name="gender" id="gender">
+                <option value="female">Feminino</option>
+                <option value="male">Masculino</option>
+                <option value="na">Prefiro não responder</option>
+              </select>
+
+              <div class="textarea-wrapper">
+                <label for="medical-info">Informações médicas</label>
+                <textarea name="medical-info" id="medical-info" cols="30" rows="10" placeholder="A criança possui alguma condição médica que a escola deve estar ciente? (Se sim. especifique)"></textarea>
+              </div>
+
+              <div class="droparea-wrapper">
+                <input type="file" name="birth-file" id="birth-file">
+                <img src="./assets/icons/cloud-upload.svg" alt="">
+                <p>
+                  Clique aqui para <br>
+                  selecionar os arquivos
+                </p>
+              </div>
+            </div>
+          </fieldset>
+        </form>
       </div>
     </main>
 
@@ -38,4 +79,5 @@
     </aside>
   </div>
 </body>
+
 </html>
