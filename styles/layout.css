@@ -15,6 +15,23 @@ main .main-container{
   margin-inline: auto;
 }
 
+main .back{
+  display: flex;
+  gap: .5rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+main h1{
+  font: 600 1.5rem/1.25 var(--font-family);
+  margin-bottom: .5rem;
+}
+
+main p{
+  font: var(--text);
+}
+
 aside{
   background-color: var(--surface-secondary);
   padding: 4rem;
@@ -22,4 +39,17 @@ aside{
 
 aside .aside-container{
   max-width: 31rem;
+}
+
+aside .aside-container header h2{
+  font: 600 2.5rem/1.25 var(--font-family);
+}
+
+aside .aside-container header span{
+  color: var(--text-highlight);
+}
+
+aside .aside-container header p{
+  margin-top: .5rem;
+  margin-bottom: 2rem;
 }
