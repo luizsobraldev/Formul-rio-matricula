@@ -6,7 +6,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulario de matricula</title>
+  <title>Formulario de matrícula</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/index.css">
 </head>
@@ -23,7 +23,7 @@
         <h1>Formulário de matrícula</h1>
         <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
 
-        <form>
+        <form method="post" enctype="multipart/form-data">
           <fieldset class="child-info">
             <legend>Informações da criança</legend>
 
@@ -44,6 +44,7 @@
                 <option value="male">Masculino</option>
                 <option value="na">Prefiro não responder</option>
               </select>
+              </div>
 
               <div class="textarea-wrapper">
                 <label for="medical-info">Informações médicas</label>
@@ -58,7 +59,6 @@
                   selecionar os arquivos
                 </p>
               </div>
-            </div>
           </fieldset>
         </form>
       </div>
