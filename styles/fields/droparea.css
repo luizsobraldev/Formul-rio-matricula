@@ -8,7 +8,6 @@
     text-align: center;
     padding: 1.75rem 1rem;
     position: relative;
-    margin-bottom: 48px;
 }
 
 .dropzone input{
@@ -23,7 +22,7 @@
     color: #A8A29E;
 }
 
-.dropzone:hover, .dropzone:has(:focus){
+.dropzone:hover, .dropzone:has(:focus){ /* o focus serve pra quando apertar tab ele funcionar os estilos tb */
     border-width: 2px;
     border-color: var(--stroke-highlight);
     border-style: dashed;
@@ -34,6 +33,6 @@
     color: var(--text-tertiary);
 }
 
-.dropzone:hover svg path{
+.dropzone:hover svg path{ /* stroke seria a cor da linha pq svg sao feitos por linhas*/
     stroke: var(--stroke-highlight);
 }
