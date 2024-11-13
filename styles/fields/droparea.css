@@ -1,5 +1,6 @@
 .dropzone{
-    border: 1px dashed var(--stroke-default);
+    border: 2px dashed transparent;
+    outline: 1px dashed var(--stroke-default);
     border-radius: .25rem;
 
     display: grid;
@@ -23,7 +24,7 @@
 }
 
 .dropzone:hover, .dropzone:has(:focus){ /* o focus serve pra quando apertar tab ele funcionar os estilos tb */
-    border-width: 2px;
+    outline-width: 0;
     border-color: var(--stroke-highlight);
     border-style: dashed;
     background-color: var(--surface-secondary);
